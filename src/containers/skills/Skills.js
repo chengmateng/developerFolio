@@ -1,14 +1,14 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import "./Skills.scss";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
-import {illustration, skillsSection} from "../../portfolio";
-import {Fade} from "react-reveal";
+import { illustration, skillsSection } from "../../portfolio";
+import { Fade } from "react-reveal";
 import codingPerson from "../../assets/lottie/codingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Skills() {
-  const {isDark} = useContext(StyleContext);
+  const { isDark } = useContext(StyleContext);
   if (!skillsSection.display) {
     return null;
   }
@@ -29,21 +29,21 @@ export default function Skills() {
         </Fade>
         <Fade right duration={1000}>
           <div className="skills-text-div">
-            <h1
-              className={isDark ? "dark-mode skills-heading" : "skills-heading"}
-            >
-              {skillsSection.title}{" "}
+            <h1 className={isDark ? "dark-mode skills-heading" : "skills-heading"}>
+              {skillsSection.title}
             </h1>
             <p
               className={
                 isDark
                   ? "dark-mode subTitle skills-text-subtitle"
                   : "subTitle skills-text-subtitle"
-              }
+                }
             >
               {skillsSection.subTitle}
             </p>
-            <SoftwareSkill />
+            {/* 添加间距 */}
+            <div style={{ margin: "20px 0" }}></div>
+            {/* 移动 skills 模块到 SoftwareSkill 之前 */}
             <div>
               {skillsSection.skills.map((skills, i) => {
                 return (
@@ -60,6 +60,13 @@ export default function Skills() {
                 );
               })}
             </div>
+
+            {/* 添加间距 */}
+            <div style={{ margin: "80px 0" }}></div>
+            
+            {/* 原位置 */}
+            <SoftwareSkill />
+            {/* 原位置 */}
           </div>
         </Fade>
       </div>

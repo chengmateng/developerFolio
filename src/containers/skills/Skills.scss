@@ -1,6 +1,7 @@
 @import "../../_globalColor";
 
 .skills-main-div {
+  // background-color:   yellow;/* 更改局部背景颜色*/
   display: flex;
   width: 100%;
   overflow: hidden;
@@ -62,3 +63,14 @@
     order: 2;
   }
 }
+
+.subTitle.skills-text-subtitle {
+  font-weight: bold !important;  // 确保字体加粗
+  color: black !important;       // 确保颜色为黑色
+}
+
+.dark-mode .subTitle.skills-text-subtitle {
+  font-weight: bold !important;  // 确保字体加粗
+  color: black !important;       // 确保颜色为黑色
+} 
+  
