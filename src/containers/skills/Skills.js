@@ -42,7 +42,7 @@ export default function Skills() {
               {skillsSection.subTitle}
             </p>
             {/* 添加间距 */}
-            <div style={{ margin: "20px 0" }}></div>
+            <div style={{ margin: "40px 0" }}></div>
             {/* 移动 skills 模块到 SoftwareSkill 之前 */}
             <div>
               {skillsSection.skills.map((skills, i) => {
