@@ -21,7 +21,7 @@ const illustration = {
 
 const greeting = {
   username: "Mateng Cheng",
-  title: "Hi All, I'm Mateng",
+  title: "Hi All, I'm mateng",
   subTitle: emoji(
     "A Ph.D. student at Case Western Reserve University."
   ),
@@ -139,7 +139,7 @@ const educationInfo = {
       ]
     },
     {
-      schoolName: "Columbia University in the city of New York",
+      schoolName: "Columbia University",
       logo: require("./assets/images/cuLogo.png"),
       subHeader: "Master of Science in Civil Engineering",
       duration: "September 2018 - February 2021",
