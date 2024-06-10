@@ -139,11 +139,11 @@ const educationInfo = {
       ]
     },
     {
-      schoolName: "Columbia University",
+      schoolName: "Columbia University in the city of New York",
       logo: require("./assets/images/cuLogo.png"),
       subHeader: "Master of Science in Civil Engineering",
       duration: "September 2018 - February 2021",
-      desc: "Ranked top 10% in the program. Took courses about Finite Element Analysis, Bridge design, Operating Systems, ...",
+      desc: "Took courses about Finite Element Analysis, Bridge design, Operating Systems, ...",
       descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
